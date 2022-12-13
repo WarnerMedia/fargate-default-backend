@@ -33,7 +33,7 @@ func main() {
 }
 
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("This is the Fargate default backend."))
+	w.Write([]byte("This is the Fargate default backend.\n"))
 }
 
 func getenv(key, fallback string) string {
